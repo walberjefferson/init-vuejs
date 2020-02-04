@@ -5,7 +5,7 @@
       <div class="col-4 mb-4" v-for="user in users" :key="user.id">
         <b-card :title="user.name" :sub-title="user.email">
           <b-card-text>
-              Active: <b-badge pill :variant="[user.active ? 'success' : 'danger']">{{ user.active }}</b-badge>
+              Ativo: <b-badge pill :variant="[(user.active == 'true') ? 'success' : 'danger']">{{ (user.active == 'true') ? 'Sim' : 'Não' }}</b-badge>
           </b-card-text>
         </b-card>
 

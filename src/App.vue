@@ -32,7 +32,6 @@ export default {
   name: 'app',
   data () {
     return {
-      themeColors: ['primary', 'secondary', 'success', 'danger', 'warning', 'info', 'light', 'dark']
     }
   }
 }

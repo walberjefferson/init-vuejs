@@ -31,7 +31,7 @@ export function makeServer(environment = 'development') {
 
     seeds(server) {
       server.loadFixtures();
-      server.createList('user', 12);
+      server.createList('user', 6);
     },
 
     routes() {
