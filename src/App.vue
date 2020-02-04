@@ -10,10 +10,19 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <router-link class="nav-link" to="/">Users</router-link>
+            <router-link class="nav-link" :to="{name: 'home'}">Users</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/about">About</router-link>
+            <router-link class="nav-link" :to="{name:'about'}">About</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" :to="{name:'produtos'}">Produtos</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" :to="{name: 'filho-1'}">Filho 1</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" :to="{name: 'filho-2'}">Filho 2</router-link>
           </li>
         </ul>
       </div>
@@ -33,7 +42,9 @@ export default {
   data () {
     return {
     }
-  }
+  },
+  methods: {
+  },
 }
 </script>
 
