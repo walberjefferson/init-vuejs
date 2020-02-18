@@ -1,16 +1,30 @@
 <template>
-  <div class="home">
-    <Users />
+  <div class="page-container">
+      <router-view />
   </div>
 </template>
 
+
+
+<style lang="scss" scoped>
+  .md-app {
+    max-height: 400px;
+    border: 1px solid rgba(#000, .12);
+  }
+
+   // Demo purposes only
+  .md-drawer {
+    width: 230px;
+    max-width: calc(100vw - 125px);
+  }
+</style>
+
 <script>
 // @ is an alias to /src
-import Users from '@/components/Users.vue';
 export default {
   name: 'home',
-  components: {
-    Users,
-  },
+  data: () => ({
+    menuVisible: false
+  })
 };
 </script>
